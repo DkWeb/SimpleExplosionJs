@@ -9,7 +9,8 @@ The only parameters you can specifiy for the explosion are:
 
 # Example usage with canvas2d
 The following example shows, how to embed the explosion generator into a typicial game loop
-`var canvasContext = ...; // Do whatever is necessary to create your canvas context
+```javascript
+var canvasContext = ...; // Do whatever is necessary to create your canvas context
 var explosions = [];
 explosions.push(simpleExplosionGenerator.startExplosion(60, 100, 50, 300)); // Create an explosion lasting for 60 frames starting with 100 particles at 50/300
 explosions.push(simpleExplosionGenerator.startExplosion(30, 50, 70, 250)); // Create another explosion lasting for 30 frames starting with 50 particles at 70/250
@@ -43,7 +44,7 @@ function gameLoop() {
         }
     }
 }
-`
+```
 
 # Why should I use this library at all?
 If you need some fancy state-of-the-art particle effects with a lot of highly configurable parameters, this is definitely **not** the right library for you. It is as simple as possible and has really just one purpose: to create a simplistic model for a radial emmitting particle effect, probably used at development-time to see at least some effects (before replacing it with some more advanced-but-complicated other solution). 
