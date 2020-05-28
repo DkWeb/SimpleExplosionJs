@@ -1,13 +1,13 @@
-#Simple explosion js
+# Simple explosion js
 This is a very primitive particle effect library without any external dependencies, which can be used to create a simple, radial, particle based explosion effect. You can see an example of the effect at the screenshot below (which is rendered on a canvas2d element). 
 ![Example of the simple explosion effect](example.png)
 
 The only parameters you can specifiy for the explosion are:
-*durationInFrames how many frames should the explosion last at all (it will create more particles at the beginning than in the end of its life-time)
-*startParticleCount how many particles should be emitted at the beginning of the explosion?
-*posX/posY What is the starting of position of the explosion in screen coordinates (thus, starting with x/y = 0/0 at the top, left corner)
+* durationInFrames how many frames should the explosion last at all (it will create more particles at the beginning than in the end of its life-time)
+* startParticleCount how many particles should be emitted at the beginning of the explosion?
+* posX/posY What is the starting of position of the explosion in screen coordinates (thus, starting with x/y = 0/0 at the top, left corner)
 
-#Example usage with canvas2d
+# Example usage with canvas2d
 The following example shows, how to embed the explosion generator into a typicial game loop
 `
 var canvasContext = ...; // Do whatever is necessary to create your canvas context
@@ -45,5 +45,5 @@ function gameLoop() {
 }
 `
 
-#Why should I use this library at all?
+# Why should I use this library at all?
 If you need some fancy state-of-the-art particle effects with a lot of highly configurable parameters, this is definitely **not** the right library for you. It is as simple as possible and has really just one purpose: to create a simplistic model for a radial emmitting particle effect, probably used at development-time to see at least some effects (before replacing it with some more advanced-but-complicated other solution). 
