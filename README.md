@@ -5,7 +5,7 @@ This is a very primitive particle effect library without any external dependenci
 The only parameters you can specifiy for the explosion are:
 * durationInFrames how many frames should the explosion last at all (it will create more particles at the beginning than in the end of its life-time)
 * startParticleCount how many particles should be emitted at the beginning of the explosion?
-* posX/posY What is the starting of position of the explosion in screen coordinates (thus, starting with x/y = 0/0 at the top, left corner)
+* posX/posY What is the starting position of the explosion in screen coordinates (thus, starting with x/y = 0/0 at the top, left corner)
 
 # Example usage with canvas2d
 The following example shows, how to embed the explosion generator into a typicial game loop
